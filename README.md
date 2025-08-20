@@ -24,6 +24,54 @@ Supported BLE notify to stream data to an Android app
 
 Real-time dashboard visualization
 
+
+🔧 Code Structure
+1. esp_ble_basic/
+
+Minimal ESP32 BLE example
+
+Established a reliable BLE Notify pipeline with dummy data
+
+Verified Android BLE client compatibility before integrating actual telemetry
+
+2. esp32_test_SoC_mah_Ampe_volt_battTemp/
+
+Prototype to decode and calculate battery-related parameters:
+
+State of Charge (SoC)
+
+mAh consumed
+
+Current (A)
+
+Voltage (V)
+
+Temperature (°C)
+
+Output via Serial Monitor for validation
+
+3. esp32_ULTIMATE_speedometer_worked/
+
+Prototype focusing on real-time speed calculation
+
+Counted hall sensor pulses via GPIO with 1 ms sampling
+
+Computed average speed (km/h) using a sliding window
+
+First successful implementation of stable, accurate speedometer
+
+4. ESP32_final/
+
+Full integration of all subsystems:
+
+RS485 frame decoding (speed, battery, throttle, temperature)
+
+BLE notification streaming to Android app
+
+Real-time dashboard display
+
+Represents the final working firmware of the project
+
 🛠️ Tech Stack
 
 Firmware: ESP32 (Arduino framework)

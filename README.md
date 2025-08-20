@@ -35,7 +35,7 @@ Tools: Logic analyzer, oscilloscope for signal capture
 
 📂 Repository Structure
 escooter-rs485-decoder/
-│
+
 ├── firmware/         # ESP32 source code (UART + BLE)
 ├── captures/         # RS485 raw data logs, decoded frames
 ├── android-app/      # Kotlin app for BLE dashboard

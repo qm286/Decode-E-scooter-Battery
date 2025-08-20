@@ -44,7 +44,11 @@ escooter-rs485-decoder/
 
 📸 Demo
 
-(Add real photos or screenshots here, e.g., scope captures, app dashboard, scooter setup)
+![b77ef57c-0088-4ae8-9b3c-59b7c032640d](https://github.com/user-attachments/assets/5923353c-8529-4eac-a77f-7ff8662e99e8)
+<img width="193" height="183" alt="Screenshot 2025-07-19 003134" src="https://github.com/user-attachments/assets/16d98935-5854-4e6d-936f-558953e72f1b" />
+![a5ab57be-3d41-4ab5-a877-03de06aa1fcb](https://github.com/user-attachments/assets/99e1f9af-b47b-489b-ab96-cb49e81e03f9)
+<img width="1227" height="390" alt="Screenshot 2025-07-07 210611 - Copy - Copy - Copy" src="https://github.com/user-attachments/assets/ed095427-aada-433f-bf04-894538500513" />
+
 
 📖 Learnings
 

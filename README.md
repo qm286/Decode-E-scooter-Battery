@@ -1,4 +1,5 @@
-🚲 E-Scooter RS485 Data Decoder
+**🚲 E-Scooter RS485 Data Decoder**
+
 📌 Overview
 
 This project focuses on reverse engineering and decoding RS485 data frames from a commercial e-scooter. The goal was to monitor real-time system parameters such as speed, battery status, and throttle signals, then display them via a custom dashboard.
@@ -9,7 +10,7 @@ By combining embedded firmware, signal analysis, and protocol decoding, this pro
 
 Reverse engineered proprietary RS485 communication protocol
 
-Implemented a firmware decoder on ESP32 (C++)
+Implemented a firmware decoder on **ESP32 (C++)**
 
 Extracted key telemetry values:
 
@@ -27,9 +28,9 @@ Real-time dashboard visualization
 
 Firmware: ESP32 (Arduino framework)
 
-Protocol: RS485 UART (custom decoded frames)
+Protocol: **RS485 UART** (custom decoded frames)
 
-Mobile App: Android (Kotlin, BLE Notify)
+Mobile App: Android (Kotlin, **BLE Notify**)
 
 Tools: Logic analyzer, oscilloscope for signal capture
 
@@ -57,10 +58,10 @@ escooter-rs485-decoder/
 
 📖 Learnings
 
-Applied reverse engineering to undocumented protocols
+Applied **reverse engineering** to undocumented protocols
 
-Gained experience in real-time embedded development
+Gained experience in real-time **embedded development**
 
 Practiced signal integrity testing with mixed hardware/software debugging
 
-Built a full pipeline from hardware interface → embedded firmware → mobile UI
+Built a full **pipeline from hardware interface** → embedded firmware → mobile UI

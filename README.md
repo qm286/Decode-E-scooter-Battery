@@ -1,4 +1,3 @@
-# Decode-E-scooter-Battery
 🚲 E-Scooter RS485 Data Decoder
 📌 Overview
 
@@ -33,3 +32,26 @@ Protocol: RS485 UART (custom decoded frames)
 Mobile App: Android (Kotlin, BLE Notify)
 
 Tools: Logic analyzer, oscilloscope for signal capture
+
+📂 Repository Structure
+escooter-rs485-decoder/
+│
+├── firmware/         # ESP32 source code (UART + BLE)
+├── captures/         # RS485 raw data logs, decoded frames
+├── android-app/      # Kotlin app for BLE dashboard
+├── docs/             # Protocol notes, timing diagrams
+└── images/           # Photos, schematics, demo screenshots
+
+📸 Demo
+
+(Add real photos or screenshots here, e.g., scope captures, app dashboard, scooter setup)
+
+📖 Learnings
+
+Applied reverse engineering to undocumented protocols
+
+Gained experience in real-time embedded development
+
+Practiced signal integrity testing with mixed hardware/software debugging
+
+Built a full pipeline from hardware interface → embedded firmware → mobile UI

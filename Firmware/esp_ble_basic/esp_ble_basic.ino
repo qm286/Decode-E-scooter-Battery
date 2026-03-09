@@ -3,14 +3,14 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 
-// UUID BLE UART (chuẩn Nordic)
+// BLE UART UUIDs (Nordic UART standard)
 #define SERVICE_UUID        "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
 #define CHARACTERISTIC_UUID "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"
 
 BLECharacteristic *pCharacteristic;
 bool deviceConnected = false;
 
-// Callback khi client kết nối/ngắt kết nối
+// Callback for client connection/disconnection
 class MyServerCallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer* pServer) {
     deviceConnected = true;
@@ -28,7 +28,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Starting BLE...");
 
-  BLEDevice::init("ESP32_SIMPLE"); // Không cần bảo mật
+  BLEDevice::init("ESP32_SIMPLE"); // No security required
 
   BLEServer *pServer = BLEDevice::createServer();
   pServer->setCallbacks(new MyServerCallbacks());
@@ -44,14 +44,14 @@ void setup() {
 
   pService->start();
   pServer->getAdvertising()->start();
-  Serial.println("BLE Advertising started.");
+  Serial.println("BLE advertising started.");
 }
 
 void loop() {
   if (deviceConnected) {
     uint32_t tick = millis();
     char hexStr[9];
-    sprintf(hexStr, "%08X", tick); // 8 ký tự HEX
+    sprintf(hexStr, "%08X", tick); // 8-character HEX string
 
     pCharacteristic->setValue((uint8_t*)hexStr, 8);
     pCharacteristic->notify();

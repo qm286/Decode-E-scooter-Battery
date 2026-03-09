@@ -17,6 +17,17 @@ By combining embedded firmware, signal analysis, and protocol decoding, this pro
 - Supported **BLE Notify** to stream data to an Android app
 - Built a real-time dashboard visualization
 
+## 📘 Project Documentation
+
+To understand the overall project and the reverse-engineering process in detail, please read:
+
+- `assets/docs/Project_Summary/Project Summary.pdf`
+- `assets/docs/Decoding_Data/jk_bms_reverse_engineering_note.pdf`
+
+## 🔌 Hardware Setup
+
+- Please refer to `asset/Figures/Figure 5 wiring diagram.png` for the hardware wiring details.
+
 ## 🧩 Code Structure
 
 - **`esp_ble_basic/`**
@@ -57,10 +68,32 @@ By combining embedded firmware, signal analysis, and protocol decoding, this pro
 
 ## 📂 Repository Structure
 
-- **`esp_ble_basic/`** — BLE communication prototype
-- **`esp32_test_SoC_mah_Ampe_volt_battTemp/`** — battery telemetry decoding prototype
-- **`esp32_speedometer/`** — speedometer prototype
-- **`ESP32_final/`** — final integrated firmware
+```text
+DECODE-E-SCOOTER-BATTERY/
+├── assets/
+│   ├── docs/
+│   │   ├── Decoding_Data/
+│   │   │   ├── 308-byte-decode.xlsx
+│   │   │   ├── jk_bms_reverse_engineering_note.pdf
+│   │   │   └── Raw data from Official tool.png
+│   │   └── Project_Summary/
+│   │       └── Project Summary.pdf
+│   └── Figures/
+│       ├── Figure 1 Hall-signal-monitoring.png
+│       ├── Figure 2 JK-BMS-offical-app-data-logging.png
+│       ├── Figure 3 Testing-on-android-app.jpg
+│       ├── Figure 4 The device.png
+│       └── Figure 5 wiring diagram.png
+├── Firmware/
+│   ├── esp_ble_basic/
+│   │   └── esp_ble_basic.ino
+│   ├── esp32_final/
+│   │   └── esp_final.ino
+│   ├── esp32_speedometer/
+│   │   └── esp32_speedometer.ino
+│   └── esp32_test_SoC_mah_Ampe_volt_battTemp/
+│       └── esp32_test_SoC_mah_Ampe_volt_battTemp.ino
+└── README.md
 
 ## 📖 Learnings
 

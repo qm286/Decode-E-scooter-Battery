@@ -34,7 +34,7 @@ By combining embedded firmware, signal analysis, and protocol decoding, this pro
     - Temperature (°C)
   - Output was validated through the Serial Monitor
 
-- **`esp32_ULTIMATE_speedometer_worked/`**
+- **`esp32_speedometer/`**
   - Prototype focused on real-time speed calculation
   - Counted hall sensor pulses via GPIO with 1 ms sampling
   - Computed average speed (km/h) using a sliding window
@@ -59,7 +59,7 @@ By combining embedded firmware, signal analysis, and protocol decoding, this pro
 
 - **`esp_ble_basic/`** — BLE communication prototype
 - **`esp32_test_SoC_mah_Ampe_volt_battTemp/`** — battery telemetry decoding prototype
-- **`esp32_ULTIMATE_speedometer_worked/`** — speedometer prototype
+- **`esp32_speedometer/`** — speedometer prototype
 - **`ESP32_final/`** — final integrated firmware
 
 ## 📖 Learnings

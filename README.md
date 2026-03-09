@@ -21,7 +21,7 @@ By combining embedded firmware, signal analysis, and protocol decoding, this pro
 
 To understand the overall project and the reverse-engineering process in detail, please read:
 
-- `assets/docs/Project_Summary/Project Summary.pdf`
+- `assets/docs/Project_Summary/Project_Summary.pdf`
 - `assets/docs/Decoding_Data/jk_bms_reverse_engineering_note.pdf`
 
 ## 🔌 Hardware Setup
@@ -94,6 +94,7 @@ DECODE-E-SCOOTER-BATTERY/
 │   └── esp32_test_SoC_mah_Ampe_volt_battTemp/
 │       └── esp32_test_SoC_mah_Ampe_volt_battTemp.ino
 └── README.md
+```
 
 ## 📖 Learnings
 

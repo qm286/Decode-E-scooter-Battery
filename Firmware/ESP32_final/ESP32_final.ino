@@ -1,3 +1,8 @@
+/*
+  Final integrated ESP32 firmware that merges Hall-sensor speed measurement,
+  RS485 battery-data decoding, and BLE notification streaming into one system.
+*/
+
 #include <BLEDevice.h>
 #include <BLEServer.h>
 #include <BLEUtils.h>

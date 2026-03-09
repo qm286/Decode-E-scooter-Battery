@@ -1,3 +1,29 @@
+/*
+  Basic ESP32 BLE Notify Example
+  ------------------------------
+  Purpose:
+  This sketch creates a simple BLE peripheral on the ESP32 to test whether
+  BLE advertising, connection, and notification transmission are working correctly.
+
+  What it does:
+  - Initializes the ESP32 as a BLE server
+  - Advertises a Nordic UART-style BLE service
+  - Creates a notify-only characteristic
+  - Waits for a client (such as an Android app) to connect
+  - Sends an 8-character hexadecimal value based on millis() every 400 ms
+  - Prints connection status and transmitted data to the Serial Monitor
+
+  Why this is useful:
+  This is a minimal BLE test before integrating real telemetry such as speed,
+  battery, temperature, or RS485-decoded data. It helps confirm that the BLE
+  communication path works end to end before more complex logic is added.
+
+  Output behavior:
+  - Serial Monitor shows connection and disconnection events
+  - Serial Monitor shows each transmitted HEX tick
+  - BLE client receives periodic notifications while connected
+*/
+
 #include <BLEDevice.h>
 #include <BLEServer.h>
 #include <BLEUtils.h>
